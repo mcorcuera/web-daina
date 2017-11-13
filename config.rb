@@ -5,8 +5,12 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-activate :dato, live_reload: true
-
+activate :contentful do |f|
+  f.space = {space: "tj4xxyd3wke5"}
+  f.access_token = ENV["CONTENTFUL_ACCESS_TOKEN"]
+  f.content_types = {homepage: "homepage"}
+  f.cda_query = {content_type: "homepage"}
+end
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 

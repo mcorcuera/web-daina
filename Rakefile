@@ -2,7 +2,14 @@ task default: %w[build]
 
 task :build do
   puts "\nBuilding project"
+  try "middleman contentful"
   try "middleman build"
+end
+
+task :serve do
+  puts "\nServing project"
+  try "middleman contentful"
+  try "middleman server"
 end
 
 namespace :travis do
