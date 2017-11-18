@@ -5,3 +5,5 @@
 .sass-cache
 build/
 data/
+.tmp/
+node_modules/

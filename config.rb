@@ -12,6 +12,13 @@ activate :contentful do |f|
   f.content_types = {homepage: "homepage"}
   f.cda_query = {content_type: "homepage"}
 end
+
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? "yarn run build" : "yarn run start",
+  source: ".tmp/dist",
+  latency: 1
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
