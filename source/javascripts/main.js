@@ -1,2 +1,2 @@
-require('../stylesheets/main.scss');
+require('main.scss');
 console.log('Testing this crap');
