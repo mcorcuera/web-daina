@@ -19,6 +19,9 @@ activate :external_pipeline,
   source: ".tmp/dist",
   latency: 1
 
+activate :directory_indexes
+  
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -32,6 +35,10 @@ page '/*.txt', layout: false
 
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
+
+["mikel", "tom"].each do |id|
+  proxy "/galery/#{id}.html", "/galery/template.html", locals: {id: id}
+end
 
 # proxy(
 #   '/this-page-has-no-template.html',

@@ -1,10 +1,11 @@
 .Header
   .Header__wrapper
     .Header__logo
-      img.Header__logo-img src="images/name-logo.svg"
+      img.Header__logo-img src="/images/name-logo.svg"
     ul.Header__navigation.Navigation
-      li.Navigation__item
+      li.Navigation__item.Navigation__item--active
         ==link_to 'Home','/'
+        img.Navigation__item-splash src="/images/red-splash.svg"
       li.Navigation__item
         ==link_to 'Galeria','galery'
       li.Navigation__item Expos

@@ -3,23 +3,34 @@
   display: flex;
   justify-content: center;
   font-family: $heading-font-family;
-  font-size: 2rem;
+  font-size: modular-scale(2);
   margin-left: -5 * $base-spacing;
 
   &__item {
     opacity: 0.5;
     margin-left: 5 * $base-spacing;
+    position: relative;
 
     &:hover {
       opacity: 1;
     }
 
     &--active {
-
+      color: white;
+      opacity: 1;
     }
-
     a {
+      color: inherit;
       text-decoration: none;
     }
+  }
+
+  &__item-splash {
+    position: absolute;
+    width: 250%;
+    max-width: initial;
+    top: -96%;
+    left: -109%;
+    z-index: -1;
   }
 }
