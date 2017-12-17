@@ -1,12 +1,14 @@
 .Navigation {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   font-family: $heading-font-family;
   font-size: 2rem;
+  margin-left: -5 * $base-spacing;
 
   &__item {
     opacity: 0.5;
+    margin-left: 5 * $base-spacing;
 
     &:hover {
       opacity: 1;
