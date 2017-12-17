@@ -1,0 +1,13 @@
+.Home {
+  &__about {
+    display: flex;
+  }
+
+  &__about-img {
+    flex: 3;
+  }
+
+  &__about-text {
+    flex: 5;
+  }
+}

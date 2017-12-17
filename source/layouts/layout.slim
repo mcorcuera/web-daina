@@ -7,6 +7,12 @@ html
     title =current_page.data.title || 'Middleman'
     =stylesheet_link_tag 'main.bundle'
     =javascript_include_tag 'main.bundle'
+    link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet"
+    link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"
+
   body
-    ==yield
+    ==partial "partials/header"
+    .Content
+      ==yield
+    ==partial "partials/footer"
 

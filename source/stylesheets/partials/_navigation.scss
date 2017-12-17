@@ -1,0 +1,23 @@
+.Navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: $heading-font-family;
+  font-size: 2rem;
+
+  &__item {
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &--active {
+
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
